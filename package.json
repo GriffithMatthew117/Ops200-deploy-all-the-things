@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "npm run build && node server",
+    "start": "npm run build && node server/index.js",
     "lint": "eslint .",
     "test": "npm run build && mocha test/*.spec.js"
   },
