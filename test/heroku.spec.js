@@ -20,7 +20,7 @@ const checkValidHerokuUrl = (url) => {
   expect(url).to.match(/(http|https):\/\/[A-Za-z0-9-]*.herokuapp.com(\/)?/, `Expected ${config.heroku_url} to match http://*.herokuapp.com`);
 };
 
-describe('Heroku Workshop', () => {
+describe('Heroku Workshop', function() {
   this.timeout(6500);
   describe('config file', () => {
     projects.forEach((project) => {
@@ -31,7 +31,7 @@ describe('Heroku Workshop', () => {
     });
   });
 
-  describe('heroku apps', () => {
+  describe('heroku apps', function() {
     projects.forEach((project) => {
       this.timeout(15000);
       it(`${project} is deployed`, (done) => {
