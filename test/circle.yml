@@ -1,0 +1,8 @@
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: Ops200-deploy-all-the-things
+machine:
+  node:
+    version: 8.1.4
