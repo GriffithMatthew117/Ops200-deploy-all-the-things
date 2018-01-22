@@ -21,7 +21,7 @@ const checkValidHerokuUrl = (url) => {
 };
 
 describe('Heroku Workshop', function() {
-  this.timeout(6500);
+  this.timeout(30000);
   describe('config file', () => {
     projects.forEach((project) => {
       it(`includes a key called "${project}" with a valid Heroku URL for a value`, () => {
